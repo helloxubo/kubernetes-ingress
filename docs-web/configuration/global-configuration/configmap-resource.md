@@ -211,7 +211,7 @@ See the doc about [VirtualServer and VirtualServerRoute resources](/nginx-ingres
      - ``default``
      -
    * - ``stream-log-format``
-     - Sets the custom `log format <http://nginx.org/en/docs/stream/ngx_stream_log_module.html#log_format>`_ for TCP/UDP load balancing. For convenience, it is possible to define the log format across multiple lines (each line separated by ``\n``). In that case, the Ingress Controller will replace any ``\n`` characters with a space character. All ``'`` characters must be escaped. 
+     - Sets the custom `log format <http://nginx.org/en/docs/stream/ngx_stream_log_module.html#log_format>`_ for TCP/UDP load balancing. For convenience, it is possible to define the log format across multiple lines (each line separated by ``\n``). In that case, the Ingress Controller will replace every ``\n`` character with a space character. All ``'`` characters must be escaped. 
      - See the `template file <https://github.com/nginxinc/kubernetes-ingress/blob/master/internal/configs/version1/nginx.tmpl>`_.
      - 
    * - ``stream-log-format-escaping``
